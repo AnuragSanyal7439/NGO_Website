@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshaya Patra - Serve Meals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #f3f6fb;
+    }
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .logo img {
+      height: 60px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .buttons button {
+      margin-left: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .donate-btn {
+      background-color: #36b04f;
+      color: white;
+    }
+    .login-btn {
+      background-color: #00BFFF;
+      color: white;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url('your-background-image.jpg');
+      background-size: cover;
+      padding: 40px;
+      color: white;
+    }
+    .hero-text {
+      max-width: 50%;
+    }
+    .hero-text h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .hero-text span {
+      color: #ffd700;
+    }
+    .hero-text .highlight {
+      color: #00BFFF;
+      font-weight: bold;
+    }
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .donate-section {
+      margin-top: 20px;
+    }
+    .donate-section button {
+      background-color: #f9c61e;
+      color: #000;
+      padding: 12px 24px;
+      font-weight: bold;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Swiper Styles */
+    .celebration-slider {
+      width: 100%;
+      height: 500px;
+      margin-top: 40px;
+    }
+    .slide-box {
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 80px;
+    }
+    .slide-text {
+      background: rgba(255,255,255,0.85);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .slide-text h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .slide-text p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .highlight-brown {
+      color: #8B4513;
+      font-weight: bold;
+    }
+    .highlight-green {
+      color: #556B2F;
+      font-weight: bold;
+    }
+    .celebrate-btn {
+      background-color: #f9c61e;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="ngologo.jpg" alt="GWS Logo">
+    </div>
+    <nav>
+      <a href="#">WHO WE ARE</a>
+      <a href="#">WHAT WE DO</a>
+      <a href="#">NEWS & STORIES</a>
+      <a href="#">HOW TO HELP</a>
+      <a href="#">GET INVOLVED</a>
+      <a href="#">IMPACT REPORTS</a>
+      <a href="#">BLOGS</a>
+    </nav>
+    <div class="buttons">
+      <button class="donate-btn">DONATE NOW</button>
+      <button class="login-btn">LOG IN</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>
+        Once, they held their <span>loved ones with care.</span><br>
+        Now, it’s our turn.<br>
+        <span class="highlight">Serve meals to aged mother</span>
+      </h1>
+      <div class="donate-section">
+        <button>Donate Now</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="your-right-image.jpg" alt="Group of elderly women">
+    </div>
+  </section>
+
+  <!-- Swipeable Celebration Slider -->
+  <div class="swiper celebration-slider">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <div class="slide-box" style="background-image: url('celebrate1.jpg');">
+          <div class="slide-text">
+            <h2>Make <span class="highlight-brown">children</span> <span class="highlight-green">smile</span></h2>
+            <p>while you celebrate <strong>your special day</strong></p>
+            <button class="celebrate-btn">Celebrate with Us</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="slide-box" style="background-image: url('celebrate2.jpg');">
+          <div class="slide-text">
+            <h2>Host a <span class="highlight-brown">fundraiser</span></h2>
+            <p>and help bring smiles to many</p>
+            <button class="celebrate-btn">Start Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Navigation arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS + Autoplay -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  </script>
+</body>
+</html>

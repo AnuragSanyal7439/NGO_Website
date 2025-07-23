@@ -1,0 +1,399 @@
+/*
+Theme Name: GWS Theme
+Theme URI: http://gwskolkata.local
+Author: Your Name
+Description: Custom theme for Garia Welfare Society
+Version: 1.0
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f3f6fb;
+}
+
+/* HEADER */
+header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo img {
+  height: 55px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+nav a.announcement {
+  color: #00BFFF;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #00BFFF;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.donate-btn {
+  background-color: #36b04f;
+  color: white;
+}
+
+.login-btn {
+  background-color: #00BFFF;
+  color: white;
+}
+
+/* HERO SECTION WITH SLIDER */
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  color: white;
+}
+
+.hero .swiper {
+  height: 100%;
+}
+
+.hero .swiper-slide {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: white;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 30px;
+  line-height: 1.6;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-content .donate-section {
+  margin-top: 20px;
+}
+
+.hero-content button {
+  background-color: #f9c61e;
+  color: #000;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .hero-content {
+    left: 5%;
+    right: 5%;
+  }
+
+  .hero-content h1 {
+    font-size: 22px;
+  }
+}
+
+/* NARRATIVE SECTION */
+.narrative {
+  padding: 60px 40px;
+  background-color: #eaf3fb;
+  text-align: center;
+}
+
+.narrative h2 {
+  font-size: 32px;
+  color: #003366;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.narrative-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.narrative-box {
+  background-color: white;
+  border-left: 6px solid #00BFFF;
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.narrative-box h3 {
+  font-size: 20px;
+  color: #0072ce;
+  margin-bottom: 15px;
+}
+
+.narrative-box ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.narrative-box li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .narrative-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.narrative-circles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.narrative-item {
+  text-align: center;
+  max-width: 150px;
+}
+
+.narrative-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.narrative-item img:hover {
+  transform: scale(1.05);
+}
+
+.narrative-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* FOOTER */
+.gws-footer {
+  background-image: url('demopic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  color: white;
+  position: relative;
+}
+
+.gws-footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.gws-footer .footer-top,
+.gws-footer .footer-links {
+  position: relative;
+  z-index: 1;
+}
+
+.gws-footer h4,
+.gws-footer a,
+.gws-footer p,
+.gws-footer li {
+  color: white !important;
+}
+
+.gws-footer a:hover {
+  color: #00BFFF !important;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-left {
+  flex: 1;
+  max-width: 300px;
+}
+
+.footer-left .footer-logo {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+social-icons a {
+  margin-right: 10px;
+  color: #00BFFF;
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-links {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #00BFFF;
+}
+
+.newsletter {
+  max-width: 300px;
+}
+
+.newsletter h4 {
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.newsletter button {
+  background-color: #36b04f;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #2e8b45;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Top contact bar */
+.top-contact-bar {
+  background-color: #f5faff;
+  padding: 6px 0;
+  font-size: 14px;
+  color: #003366;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.contact-container i {
+  color: #00BFFF;
+  margin-right: 6px;
+}
